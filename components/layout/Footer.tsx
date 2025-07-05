@@ -5,18 +5,18 @@ export default function Footer() {
     return (
         <footer className="w-full py-6">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                     {/* First column - 1/4 width */}
-                    <div className="md:col-span-1">
-                        <div className="flex flex-col gap-y-2 items-center md:items-start">
+                    <div className="lg:col-span-1">
+                        <div className="flex flex-col gap-y-2 items-center lg:items-start">
                             <Image
                                 src="/images/logo.webp"
                                 alt="Sentra Gamers"
                                 width={240}
                                 height={115}
-                                className="w-auto h-auto max-w-[200px] md:max-w-[240px]"
+                                className="w-auto h-auto max-w-[200px] lg:max-w-[240px]"
                             />
-                            <div className="flex justify-center md:justify-start space-x-3 mt-2">
+                            <div className="flex justify-center lg:justify-start space-x-3 mt-2">
                                 <a
                                     href="https://www.facebook.com"
                                     target="_blank"
@@ -82,11 +82,11 @@ export default function Footer() {
                     </div>
 
                     {/* Second column - 2/4 width */}
-                    <div className="md:col-span-2">
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-x-10 h-full">
+                    <div className="lg:col-span-2">
+                        <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-x-10 h-full">
                             <Link
                                 href="/about"
-                                className="text-crimson-trigger hover:text-crimson-trigger/80 transition-colors py-2 md:py-0 block md:inline"
+                                className="text-crimson-trigger hover:text-crimson-trigger/80 transition-colors py-2 lg:py-0 block lg:inline"
                             >
                                 ABOUT US
                             </Link>
@@ -98,7 +98,7 @@ export default function Footer() {
                             </Link>
                             <Link
                                 href="/contact"
-                                className="text-crimson-trigger hover:text-crimson-trigger/80 transition-colors py-2 md:py-0 block md:inline"
+                                className="text-crimson-trigger hover:text-crimson-trigger/80 transition-colors py-2 lg:py-0 block lg:inline"
                             >
                                 CONTACT
                             </Link>
@@ -106,7 +106,7 @@ export default function Footer() {
                     </div>
 
                     {/* Third column - 1/4 width */}
-                    <div className="md:col-span-1 text-center md:text-right">
+                    <div className="lg:col-span-1 text-center lg:text-right">
                         <h4 className="text-base mb-1 text-crimson-trigger">LINKS</h4>
                         <ul className="space-y-1">
                             <li>

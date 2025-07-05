@@ -100,12 +100,14 @@ export default function FlashSale() {
                                 </div>
                             </div>
                         </div>
-                        <Image
-                            src="/images/illustration/flash-sale-bar.webp"
-                            alt="Flash Sale Bar"
-                            width={142}
-                            height={58}
-                        />
+                        <div className="hidden md:block">
+                            <Image
+                                src="/images/illustration/flash-sale-bar.webp"
+                                alt="Flash Sale Bar"
+                                width={142}
+                                height={58}
+                            />
+                        </div>
                     </div>
                 }
             >

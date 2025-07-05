@@ -14,7 +14,7 @@ export default function HomeBanner() {
                     link: banner.link,
                     alt: `Banner ${banner.id}`,
                 }))}
-                className="h-[340px] rounded-lg"
+                className="h-[150px] sm:h-[200px] md:h-[250px] lg:h-[340px] rounded-lg"
                 autoPlay={true}
                 interval={7000}
                 showArrows={true}

@@ -4,18 +4,19 @@ import Image from 'next/image';
 export default function Footer() {
     return (
         <footer className="w-full bg-white py-6">
-            <div className="container mx-auto">
+            <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* First column - 1/4 width */}
                     <div className="md:col-span-1">
-                        <div className="flex flex-col gap-y-2 items-center">
+                        <div className="flex flex-col gap-y-2 items-center md:items-start">
                             <Image
                                 src="/images/logo.webp"
                                 alt="Sentra Gamers"
-                                width={300}
-                                height={144}
+                                width={240}
+                                height={115}
+                                className="w-auto h-auto max-w-[200px] md:max-w-[240px]"
                             />
-                            <div className="flex justify-center space-x-2">
+                            <div className="flex justify-center md:justify-start space-x-3 mt-2">
                                 <a
                                     href="https://www.facebook.com"
                                     target="_blank"
@@ -82,22 +83,22 @@ export default function Footer() {
 
                     {/* Second column - 2/4 width */}
                     <div className="md:col-span-2">
-                        <div className="flex items-center justify-center gap-x-10 h-full">
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-x-10 h-full">
                             <Link
                                 href="/about"
-                                className="text-crimson-trigger hover:text-crimson-trigger/80 transition-colors"
+                                className="text-crimson-trigger hover:text-crimson-trigger/80 transition-colors py-2 md:py-0 block md:inline"
                             >
                                 ABOUT US
                             </Link>
                             <Link
                                 href="/terms"
-                                className="text-crimson-trigger hover:text-crimson-trigger/80 transition-colors"
+                                className="text-crimson-trigger hover:text-crimson-trigger/80 transition-colors py-2 md:py-0 block md:inline"
                             >
                                 TERMS AND CONDITIONS
                             </Link>
                             <Link
                                 href="/contact"
-                                className="text-crimson-trigger hover:text-crimson-trigger/80 transition-colors"
+                                className="text-crimson-trigger hover:text-crimson-trigger/80 transition-colors py-2 md:py-0 block md:inline"
                             >
                                 CONTACT
                             </Link>
@@ -105,13 +106,13 @@ export default function Footer() {
                     </div>
 
                     {/* Third column - 1/4 width */}
-                    <div className="md:col-span-1 text-right">
+                    <div className="md:col-span-1 text-center md:text-right">
                         <h4 className="text-base mb-1 text-crimson-trigger">LINKS</h4>
-                        <ul>
+                        <ul className="space-y-1">
                             <li>
                                 <Link
                                     href="/"
-                                    className="text-gray-600 hover:text-gray-900 transition-colors"
+                                    className="text-gray-600 hover:text-gray-900 transition-colors block py-1"
                                 >
                                     Top-Up
                                 </Link>
@@ -119,7 +120,7 @@ export default function Footer() {
                             <li>
                                 <Link
                                     href="/games"
-                                    className="text-gray-600 hover:text-gray-900 transition-colors"
+                                    className="text-gray-600 hover:text-gray-900 transition-colors block py-1"
                                 >
                                     Shop
                                 </Link>
@@ -127,7 +128,7 @@ export default function Footer() {
                             <li>
                                 <Link
                                     href="/news"
-                                    className="text-gray-600 hover:text-gray-900 transition-colors"
+                                    className="text-gray-600 hover:text-gray-900 transition-colors block py-1"
                                 >
                                     Tournament
                                 </Link>
@@ -135,7 +136,7 @@ export default function Footer() {
                             <li>
                                 <Link
                                     href="/community"
-                                    className="text-gray-600 hover:text-gray-900 transition-colors"
+                                    className="text-gray-600 hover:text-gray-900 transition-colors block py-1"
                                 >
                                     News
                                 </Link>
@@ -143,7 +144,7 @@ export default function Footer() {
                             <li>
                                 <Link
                                     href="/community"
-                                    className="text-gray-600 hover:text-gray-900 transition-colors"
+                                    className="text-gray-600 hover:text-gray-900 transition-colors block py-1"
                                 >
                                     Community
                                 </Link>
@@ -152,7 +153,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="text-center text-gray-500 text-xs mt-4">
+                <div className="text-center text-gray-500 text-xs mt-8 md:mt-4 border-t border-gray-200 pt-4 md:pt-2">
                     <p>
                         Copyright © {new Date().getFullYear()} SentraGamers. All rights reserved.
                     </p>

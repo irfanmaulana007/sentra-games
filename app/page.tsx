@@ -29,7 +29,7 @@ export default function Home() {
                         </div>
                     </MainContent>
                     <SideContent>
-                        <div className="flex flex-col gap-y-8">
+                        <div className="hidden lg:flex flex-col gap-y-8">
                             <JoinMembershipCard />
                             <PendingTransaction />
                             <CompletedTransaction />

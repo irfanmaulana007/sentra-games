@@ -6,7 +6,6 @@ import { format } from 'date-fns';
 import { Tournament } from '../../types/models/tournament';
 import { Game } from '../../types/models/game';
 
-// Define the TournamentWithGame interface that extends Tournament with game property
 interface TournamentWithGame extends Tournament {
     game: Game;
 }

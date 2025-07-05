@@ -8,9 +8,12 @@ export default function PopularGameTopup() {
     return (
         <ScrollContainer
             title={
-                <h3 className="text-lg font-bold font-sans">
-                    🔥 <span className="text-red-600">Lagi Ramai,</span> Lagi Dicari!
-                </h3>
+                <div className="flex flex-col">
+                    <h3 className="text-lg font-bold font-sans">
+                        🔥 <span className="text-red-600">Lagi Ramai,</span> Lagi Dicari!
+                    </h3>
+                    <p className="text-sm text-gray-500">Top-up game paling laris</p>
+                </div>
             }
         >
             {games.map(game => (

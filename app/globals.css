@@ -134,6 +134,12 @@
     --sidebar-ring: oklch(0.556 0 0);
 }
 
+body {
+    background-image: url('/images/background.webp');
+    background-size: cover;
+    background-position: center;
+}
+
 .bg-button-fireburst {
     background: var(--fireburst-gradient);
     transition: opacity 0.2s ease-in-out;
@@ -147,11 +153,17 @@
     background: linear-gradient(180deg, #ffcd0f 0%, #ff9c66 100%);
     transition: opacity 0.2s ease-in-out;
 }
+
 .bg-button-join-tournament:hover {
     opacity: 0.8;
 }
+
 .bg-join-membership-card {
     background: linear-gradient(135deg, #730c0e 62.1%, #cc2c00 100%);
+}
+
+.bg-flash-sale-card {
+    background: linear-gradient(105.18deg, #a60c0d 65.8%, #fab31e 138.43%);
 }
 
 /* Custom scrollbar styles */

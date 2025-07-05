@@ -1,6 +1,7 @@
 'use client';
 
 import { Button } from 'components/ui/button';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function JoinMembershipCard() {
@@ -9,7 +10,7 @@ export default function JoinMembershipCard() {
     if (!isVisible) return null;
 
     return (
-        <div className="bg-join-membership-card rounded-lg px-4 py-6 shadow-sm relative space-y-2">
+        <div className="bg-join-membership-card rounded-lg px-4 py-6 shadow-sm relative space-y-2 overflow-hidden">
             {/* Close button */}
             <button
                 onClick={() => setIsVisible(false)}
@@ -40,6 +41,10 @@ export default function JoinMembershipCard() {
             <Button className="bg-button-fireburst text-neutral-50 font-medium py-1 px-4 rounded-lg hover:opacity-90 transition-opacity">
                 Langsung Gabung
             </Button>
+
+            <div className="absolute bottom-0 right-0">
+                <Image src="/images/illustration/coin.webp" alt="Coin" width={118} height={118} className="-rotate-1" />
+            </div>
         </div>
     );
 }

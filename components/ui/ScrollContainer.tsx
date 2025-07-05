@@ -58,7 +58,7 @@ export default function ScrollContainer({
         <div className={`flex flex-col gap-y-4 ${className}`}>
             {title && (
                 <div className="flex justify-between items-center">
-                    <div>{title}</div>
+                    {title}
                     <div className="flex gap-2">
                         <button 
                             onClick={scrollPrev} 

@@ -85,7 +85,3 @@ We welcome contributions to Sentra Gamers! Please feel free to submit issues and
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contact
-
-For any inquiries, please contact us at info@sentragamers.com

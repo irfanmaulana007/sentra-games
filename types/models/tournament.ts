@@ -1,6 +1,6 @@
 export interface Tournament {
-    id: string;
-    game_id: string;
+    id: number;
+    game_id: number;
     name: string;
     description: string;
     start_date: string;

@@ -1,6 +1,6 @@
 export interface GameProduct {
-    id: string;
-    game_id: string;
+    id: number;
+    game_id: number;
     name: string;
     description: string;
     price: number;
@@ -12,7 +12,7 @@ export interface GameProduct {
 }
 
 export interface Product {
-    id: string;
+    id: number;
     name: string;
     description: string;
     price: number;

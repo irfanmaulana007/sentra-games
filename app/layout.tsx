@@ -13,8 +13,45 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Sentra Gamers",
+  title: "SentraGamers",
   description: "Your ultimate gaming destination",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  manifest: "/site.webmanifest",
+  themeColor: "#ffffff",
+  keywords: ["SentraGamers", "Gaming", "News", "Reviews", "Community"],
+  authors: [{ name: "SentraGamers" }],
+  creator: "SentraGamers",
+  publisher: "SentraGamers",
+  openGraph: {
+    title: "SentraGamers",
+    description: "Your ultimate gaming destination",
+    type: "website",
+    locale: "en_US",
+    siteName: "SentraGamers",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "SentraGamers",
+      },
+    ],
+  },
+    twitter: {
+    title: "SentraGamers",
+    description: "Your ultimate gaming destination",
+    card: "summary_large_image",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "SentraGamers",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

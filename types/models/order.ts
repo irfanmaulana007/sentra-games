@@ -5,22 +5,22 @@ export enum OrderStatus {
 }
 
 export interface Order {
-    id: string;
-    user_id: string;
+    id: number;
+    user_id: number;
     status: OrderStatus;
     created_at: string;
     updated_at: string;
 }
 
 export interface OrderGameProduct extends Order {
-    game_id: string;
-    product_id: string;
+    game_id: number;
+    product_id: number;
     quantity: number;
     total_price: number;
 }
 
 export interface OrderProduct extends Order {
-    product_id: string;
+    product_id: number;
     quantity: number;
     total_price: number;
 }

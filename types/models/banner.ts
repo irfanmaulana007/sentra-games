@@ -1,6 +1,6 @@
 export interface Banner {
-  id: string;
+  id: number;
   image: string;
   link: string;
-  game_id: string;
+  game_id: number;
 }

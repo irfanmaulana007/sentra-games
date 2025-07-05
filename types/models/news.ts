@@ -5,9 +5,9 @@ export enum NewsType {
 }
 
 export interface News {
-    id: string;
+    id: number;
     slug: string;
-    author_id: string;
+    author_id: number;
     title: string;
     content: string;
     image: string;

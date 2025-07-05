@@ -10,6 +10,7 @@ export interface Tournament {
     price: number;
     max_participant: number;
     participant_count: number;
+    thumbnail: string;
     created_at: string;
     updated_at: string;
 }

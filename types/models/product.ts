@@ -4,7 +4,7 @@ export interface GameProduct {
     name: string;
     description: string;
     price: number;
-    discount: number;
+    discount_percent: number;
     tags: string[];
     stock: number;
     created_at: string;
@@ -16,7 +16,7 @@ export interface Product {
     name: string;
     description: string;
     price: number;
-    discount: number;
+    discount_percent: number;
     stock: number;
     image: string;
     created_at: string;

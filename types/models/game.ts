@@ -2,7 +2,8 @@ export interface Game {
     id: number;
     name: string;
     description: string;
-    image: string;
+    logo: string;
+    image_thumbnail: string;
     genre: string;
     tags: string[];
     created_at: string;

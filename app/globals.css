@@ -143,6 +143,39 @@
     opacity: 0.8;
 }
 
+.bg-button-join-tournament {
+    background: linear-gradient(180deg, #ffcd0f 0%, #ff9c66 100%);
+    transition: opacity 0.2s ease-in-out;
+}
+.bg-button-join-tournament:hover {
+    opacity: 0.8;
+}
+.bg-join-membership-card {
+    background: linear-gradient(135deg, #730c0e 62.1%, #cc2c00 100%);
+}
+
+/* Custom scrollbar styles */
+.scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #d1d5db; /* gray-300 */
+    border-radius: 20px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: #9ca3af; /* gray-400 */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
 @layer base {
     * {
         @apply border-border outline-ring/50;
